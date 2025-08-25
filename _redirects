@@ -1,0 +1,6 @@
+# GitHub Pages redirects for SPA routing
+/call-for-papers /call-for-papers/
+/call-for-papers/* /call-for-papers/index.html
+/faq /faq/
+/faq/* /faq/index.html
+/* /index.html
