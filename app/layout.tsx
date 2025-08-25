@@ -1,9 +1,7 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import PasswordProtection from './components/PasswordProtection'
 
 export const metadata: Metadata = {
   title: 'Agents4Science 2025',
@@ -17,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <PasswordProtection>
+          {children}
+        </PasswordProtection>
+      </body>
     </html>
   )
 }
