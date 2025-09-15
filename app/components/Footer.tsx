@@ -19,17 +19,17 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-gray-900 mb-3">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/call-for-papers/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/call-for-papers/">
                     Call for Papers
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/faq/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/faq/">
                     FAQ
                   </a>
                 </li>
