@@ -4,7 +4,7 @@ import './globals.css'
 import PasswordProtection from './components/PasswordProtection'
 
 export const metadata: Metadata = {
-  title: 'Agents4Science 2026',
+  title: 'AI Agents4Qual 2026',
   description: 'Open Conference of AI Agents for Science 2026 - Exploring the future of AI-driven scientific discovery through transparent AI-authored research and AI-driven peer review.',
 }
 
@@ -16,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <PasswordProtection>
-          {children}
-        </PasswordProtection>
+        {children}
       </body>
     </html>
   )

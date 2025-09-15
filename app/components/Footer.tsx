@@ -19,17 +19,17 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-gray-900 mb-3">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/QualAISummit/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/QualAISummit/call-for-papers/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/call-for-papers/">
                     Call for Papers
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/QualAISummit/faq/">
+                  <a className="text-gray-600 hover:text-gray-900 text-sm" href="/AIAgents4Qual/faq/">
                     FAQ
                   </a>
                 </li>
@@ -38,14 +38,14 @@ export default function Footer() {
             <div>
               <h4 className="text-sm font-semibold text-gray-900 mb-3">Contact</h4>
               <p className="text-gray-600 text-sm">
-                agents4science at gmail dot com
+                ai dot agents4qual at gmail dot com
               </p>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-200 pt-8 mt-8">
           <p className="text-gray-500 text-sm text-center">
-            © 2026 Open Conference of AI Agents for Science. All rights reserved.
+            © 2026 Open Conference of AI Agents for Qualitative Research. All rights reserved.
           </p>
         </div>
       </div>

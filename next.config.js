@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true
   },
   assetPrefix: '',
-  basePath: '/QualAISummit'
+  basePath: ''
 }
 
 module.exports = nextConfig

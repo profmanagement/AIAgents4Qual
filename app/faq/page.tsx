@@ -24,17 +24,26 @@ export default function FAQPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto space-y-12">
             
-            {/* AI Capabilities */}
+            {/* AI Capabilities in General */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">AI Capabilities</h2>
               
               <div className="space-y-6">
                 <div className="card">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <strong>What do we mean by AI? – Our Definition of AI</strong>
+                  </h3>
+                  <p className="text-gray-700">
+                    For this conference, AI encompasses Large Language Models (LLMs), AI agents that can autonomously perform tasks, and generative AI systems that create content. This includes models like chatbots or custom research agents (e.g., DeepResearch and equivalents) that can analyze data, generate hypotheses, write code, and produce scientific manuscripts with minimal human intervention. If you you are capable of building your own AI research agent, we encourage you to do so. If not, you can use existing tools and models to assist in your research and writing.
+                  </p>
+                </div>
+
+                <div className="card">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
                     <strong>Is AI good enough to do science and review papers?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    We don't know yet, and that's exactly why this experimental conference is valuable. Agents4Science serves as a transparent sandbox to explore this question by inviting AI-generated research papers and using AI agents to review them.
+                    We don't know yet, and that's exactly why this experimental conference is valuable. AI Agents4Qual serves as a transparent sandbox to explore this question by inviting AI-generated research papers and using AI agents to review them.
                   </p>
                 </div>
               </div>
@@ -50,7 +59,7 @@ export default function FAQPage() {
                     <strong>How much guidance can human co-authors provide to the AI agent during paper writing?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the core execution—including coding, figure generation, and writing—should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
+                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the core development of the research design (research question, sampling procedure, data collection and analysis), figure generation, and writing—should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
                   </p>
                 </div>
                 
@@ -84,7 +93,7 @@ export default function FAQPage() {
                     <strong>What kinds of research topics are eligible for submission?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    We welcome submissions across all areas of science, engineering, and computation. The key requirement is that the research must be primarily conducted and written by AI agents. For example, papers that rely substantially on wet-lab experiments performed by human authors fall outside the scope of this conference.
+                    We welcome submissions across all areas of qualitative research. The key requirement is that the research must be primarily conducted and written by AI agents. If you are unsure whether your topic fits, please contact us at ai dot agents4qual at gmail dot com.
                   </p>
                 </div>
               </div>
@@ -100,7 +109,7 @@ export default function FAQPage() {
                     <strong>Can I resubmit the same paper to other venues?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    Publication in Agents4Science does not preclude submissions to other conferences or journals.
+                    Publication in AI Agents4Qual does not preclude submissions to other conferences or journals.
                   </p>
                 </div>
                 
@@ -143,7 +152,7 @@ export default function FAQPage() {
                     <strong>Will there be human reviewers?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    All the submissions will be reviewed by AI reviewers in the first round, following the standard NeurIPS scoring instructions and rubric. Top-rated papers will be further assessed by our human expert advisory board for Oral, Spotlight and Award selections.
+                    All the submissions will be reviewed by AI reviewers in the first round, following the <a href='/call-for-papers/' className="text-blue-600 hover:text-blue-800 underline">CASP</a> scoring instructions and rubric.
                   </p>
                 </div>
                 
@@ -155,15 +164,7 @@ export default function FAQPage() {
                     We anticipate that errors will happen, and studying them will be instructive. All submissions and reviews will be publicly available on OpenReview. In addition, a panel of human experts will evaluate the top-ranked submissions. We encourage the community to engage with the submissions and reviews and highlight any mistakes made by AI agents. Understanding these failure modes is a key goal of the conference.
                   </p>
                 </div>
-                
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    <strong>Will there be prizes?</strong>
-                  </h3>
-                  <p className="text-gray-700">
-                    Yes! We will offer compute credit to the top papers. Additional details will be announced.
-                  </p>
-                </div>
+
               </div>
             </div>
 
@@ -177,7 +178,8 @@ export default function FAQPage() {
                     <strong>Will you publish post-conference analyses?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    Yes. We plan to publish a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for science development.
+                    Yes. We plan to publish the papers and its reviews to make them available after the conference. A suitable format will be discussed at the conference. All contributions to the conference publication will be based on the discussions at the virtual conference and include human authorship.
+                    a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for science development.
                   </p>
                 </div>
               </div>
@@ -190,7 +192,7 @@ export default function FAQPage() {
               <div className="space-y-6">
                 <div className="card">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                    <strong>If you have other questions, please contact us at agents4science@gmail.com.</strong>
+                    <strong>If you have other questions, please contact us at ai dot agents4qual at gmail dot com.</strong>
                   </h3>
                   <p className="text-gray-700">
                     We're here to help! Feel free to reach out with any additional questions about the conference, submission process, or AI authorship requirements.
