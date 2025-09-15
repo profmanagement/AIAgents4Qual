@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-const repoBase = '/QualAISummit'
+const repoBase = '/AIAgents4Qual'
 
 const nextConfig = {
   output: 'export',

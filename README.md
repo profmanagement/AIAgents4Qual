@@ -1,10 +1,10 @@
-# QualAISummit - AI Agents for Science Conference Website
+# AIAgents4Qual - AI Agents for Qualitative Research Conference Website
 
-This is a complete clone of the [Agents4Science 2025](https://agents4science.stanford.edu/) website, adapted for QualAISummit and built with Next.js, TypeScript, and Tailwind CSS.
+This is a complete clone of the [Agents4Science 2025](https://agents4science.stanford.edu/) website, adapted for AIAgents4Qual and built with Next.js, TypeScript, and Tailwind CSS.
 
 ## 🚀 Live Demo
 
-The website will be available at: `https://profmanagement.github.io/QualAISummit/`
+The website will be available at: `https://profmanagement.github.io/AIAgents4Qual/`
 
 ## ✨ Features
 
@@ -41,8 +41,8 @@ The website will be available at: `https://profmanagement.github.io/QualAISummit
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/profmanagement/QualAISummit.git
-cd QualAISummit
+git clone https://github.com/profmanagement/AIAgents4Qual.git
+cd AIAgents4Qual
 ```
 
 2. Install dependencies:
@@ -64,7 +64,7 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-QualAISummit/
+AIAgents4Qual/
 ├── app/
 │   ├── components/
 │   │   ├── Navigation.tsx
@@ -102,7 +102,7 @@ The website is automatically deployed to GitHub Pages using GitHub Actions:
 1. **Push to main branch** triggers automatic build and deployment
 2. **GitHub Actions workflow** builds the Next.js project
 3. **Static export** is generated and deployed to GitHub Pages
-4. **Live website** is available at `https://profmanagement.github.io/QualAISummit/`
+4. **Live website** is available at `https://profmanagement.github.io/AIAgents4Qual/`
 
 ### Manual Deployment
 

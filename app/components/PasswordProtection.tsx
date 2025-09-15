@@ -12,27 +12,23 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  // Removed separate loading state to avoid being stuck on static export
 
   useEffect(() => {
-    // Check if user is already authenticated
-    const authStatus = localStorage.getItem(AUTH_CONFIG.STORAGE_KEY);
-    const authTime = localStorage.getItem(`${AUTH_CONFIG.STORAGE_KEY}_time`);
-    
-    if (authStatus === 'true' && authTime) {
-      const currentTime = Date.now();
-      const authTimestamp = parseInt(authTime);
-      
-      // Check if session has expired
-      if (AUTH_CONFIG.SESSION_TIMEOUT === 0 || (currentTime - authTimestamp) < AUTH_CONFIG.SESSION_TIMEOUT) {
-        setIsAuthenticated(true);
-      } else {
-        // Session expired, clear storage
-        localStorage.removeItem(AUTH_CONFIG.STORAGE_KEY);
-        localStorage.removeItem(`${AUTH_CONFIG.STORAGE_KEY}_time`);
+    try {
+      const authStatus = typeof window !== 'undefined' ? localStorage.getItem(AUTH_CONFIG.STORAGE_KEY) : null;
+      const authTime = typeof window !== 'undefined' ? localStorage.getItem(`${AUTH_CONFIG.STORAGE_KEY}_time`) : null;
+      if (authStatus === 'true' && authTime) {
+        const currentTime = Date.now();
+        const authTimestamp = parseInt(authTime);
+        if (AUTH_CONFIG.SESSION_TIMEOUT === 0 || (currentTime - authTimestamp) < AUTH_CONFIG.SESSION_TIMEOUT) {
+          setIsAuthenticated(true);
+        } else {
+          localStorage.removeItem(AUTH_CONFIG.STORAGE_KEY);
+          localStorage.removeItem(`${AUTH_CONFIG.STORAGE_KEY}_time`);
+        }
       }
-    }
-    setIsLoading(false);
+    } catch {}
   }, []);
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
@@ -54,17 +50,6 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
     localStorage.removeItem(`${AUTH_CONFIG.STORAGE_KEY}_time`);
     setPassword('');
   };
-
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
-        </div>
-      </div>
-    );
-  }
 
   if (!isAuthenticated) {
     return (

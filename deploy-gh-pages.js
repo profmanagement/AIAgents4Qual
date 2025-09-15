@@ -41,7 +41,7 @@ console.log('\n✅ Build structure looks good!');
 
 // Check GitHub Pages configuration
 console.log('\n🔧 GitHub Pages Configuration:');
-console.log('1. Go to your repository: https://github.com/profmanagement/QualAISummit');
+console.log('1. Go to your repository: https://github.com/profmanagement/AIAgents4Qual');
 console.log('2. Click "Settings" tab');
 console.log('3. Scroll down to "Pages" section');
 console.log('4. Under "Source", select "Deploy from a branch"');
