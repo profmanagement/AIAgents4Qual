@@ -83,6 +83,22 @@ export default function FAQPage() {
               </div>
             </div>
 
+            {/* Research Ethics */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Research Ethics</h2>
+              
+              <div className="space-y-6">
+                <div className="card">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <strong>Who is responsible for data protection, informed consent, and research ethics compliance?</strong>
+                  </h3>
+                  <p className="text-gray-700">
+                    Each researcher is personally responsible for ensuring that their research complies with all applicable data protection regulations, ethical guidelines, and informed consent requirements. This includes adherence to local and international laws (such as GDPR, HIPAA, etc.), institutional IRB requirements, and professional ethical standards. Even when AI agents assist in conducting research, the ultimate responsibility for ethical compliance lies with the human researchers. We strongly recommend obtaining ethical review from appropriate institutional bodies before beginning research.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Research Topics */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Research Topics</h2>
