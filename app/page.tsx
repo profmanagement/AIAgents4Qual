@@ -1,6 +1,14 @@
 // app/page.tsx
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
+import PasswordProtection from './components/PasswordProtection'
+import Image from 'next/image'
+
+// Helper function for GitHub Pages asset paths
+const getAssetPath = (path: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/AIAgents4Qual' : '';
+  return `${basePath}${path}`;
+};
 
 export default function Home() {
   return (
@@ -151,20 +159,24 @@ export default function Home() {
                 <p className="text-sm text-gray-600">Ruhr-University Bochum</p>
               </div>
               <div className="card text-center">
-                <img 
-                  src="/images/avatar_kathrin.png" 
+                <Image 
+                  src={getAssetPath("/images/avatar_kathrin.png")}
                   alt="Kathrin Zimmermann"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  width={96}
+                  height={96}
+                  className="rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Kathrin Zimmermann</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
                 <p className="text-sm text-gray-600">Ruhr-University Bochum</p>
               </div>
               <div className="card text-center">
-                <img 
-                  src="/images/avatar_maik.png" 
+                <Image 
+                  src={getAssetPath("/images/avatar_maik.png")}
                   alt="Maik Arnold"
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                  width={96}
+                  height={96}
+                  className="rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Maik Arnold</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
