@@ -153,7 +153,13 @@ export default function Home() {
                 <p className="text-sm text-gray-600">Bielefeld University</p>
               </div>
               <div className="card text-center">
-                <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
+                <Image 
+                  src={getAssetPath("/images/avatar_monika.png")}
+                  alt="Kathrin Zimmermann"
+                  width={96}
+                  height={96}
+                  className="rounded-full mx-auto mb-4 object-cover"
+                />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Monika Gesing</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
                 <p className="text-sm text-gray-600">Ruhr-University Bochum</p>
