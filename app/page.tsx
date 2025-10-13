@@ -135,7 +135,13 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Conference Organizers</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
               <div className="card text-center">
-                <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
+                <Image 
+                  src={getAssetPath("/images/avatar_susanne.png")}
+                  alt="Kathrin Zimmermann"
+                  width={96}
+                  height={96}
+                  className="rounded-full mx-auto mb-4 object-cover"
+                />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Susanne Friese</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
                 <p className="text-sm text-gray-600">Qeludra Consultancy</p>
