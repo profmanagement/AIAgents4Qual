@@ -156,7 +156,7 @@ export default function Home() {
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Fabio<br></br> Lieder</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
-                <p className="text-sm text-gray-600">University of the Bundeswehr Munich</p>
+                <p className="text-sm text-gray-600">Bundeswehr University Munich</p>
               </div>
               <div className="card text-center">
                 <Image 
@@ -166,7 +166,7 @@ export default function Home() {
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">Masche Liening</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">Mascha Liening</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
                 <p className="text-sm text-gray-600">Bielefeld University</p>
               </div>
