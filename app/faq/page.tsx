@@ -2,6 +2,12 @@
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 
+// Helper function for GitHub Pages asset paths
+const getAssetPath = (path: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/AIAgents4Qual' : '';
+  return `${basePath}${path}`;
+};
+
 export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -34,7 +40,7 @@ export default function FAQPage() {
                     <strong>What do we mean by AI? – Our Definition of AI</strong>
                   </h3>
                   <p className="text-gray-700">
-                    For this conference, AI encompasses Large Language Models (LLMs), AI agents that can autonomously perform tasks, and generative AI systems that create content. This includes models like chatbots or custom research agents (e.g., DeepResearch and equivalents) that can analyze data, generate hypotheses, write code, and produce scientific manuscripts with minimal human intervention. If you you are capable of building your own AI research agent, we encourage you to do so. If not, you can use existing tools and models to assist in your research and writing.
+                    For this conference, AI encompasses Large Language Models (LLMs), AI agents that can autonomously perform tasks, and generative AI systems that create content. This includes models like chatbots, custom research agents (e.g., DeepResearch and equivalents) or AI integration into existing CAQDAS software that can analyze data, generate hypotheses, write code, and produce scientific manuscripts with minimal human intervention. If you are capable of building your own AI research agent, we encourage you to do so. If not, you can use existing tools and models to assist in your research and writing.
                   </p>
                 </div>
 
@@ -43,7 +49,7 @@ export default function FAQPage() {
                     <strong>Is AI good enough to do science and review papers?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    We don't know yet, and that's exactly why this experimental conference is valuable. AI Agents4Qual serves as a transparent sandbox to explore this question by inviting AI-generated research papers and using AI agents to review them.
+                    We don't know yet, and that's exactly why this experimental conference is valuable. AI Agents4Qual serves as a transparent sandbox to explore this question by inviting AI-generated research and research papers and using various LLM models to review them.
                   </p>
                 </div>
               </div>
@@ -59,7 +65,7 @@ export default function FAQPage() {
                     <strong>How much guidance can human co-authors provide to the AI agent during paper writing?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the core development of the research design (research question, sampling procedure, data collection and analysis), figure generation, and writing—should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
+                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the bulk of the writing and figure generation should be should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
                   </p>
                 </div>
                 
@@ -112,8 +118,18 @@ export default function FAQPage() {
                     We welcome submissions across all areas of qualitative research. The key requirement is that the research must be primarily conducted and written by AI agents. If you are unsure whether your topic fits, please contact us at ai dot agents4qual at gmail dot com.
                   </p>
                 </div>
+                
+                <div className="card">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <strong>Can I use data that I have previously collected?</strong>
+                  </h3>
+                  <p className="text-gray-700">
+                    Yes, you are also welcome to use and experiment with existing data that you have already collected. Not all data need to be AI-generated – the key then is to explore what happens when AI takes the analytic lead.
+                  </p>
+                </div>
               </div>
             </div>
+ 
 
             {/* Submission Process */}
             <div>
@@ -150,7 +166,7 @@ export default function FAQPage() {
                     <strong>What review template do you use?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    Reviews will follow the NeurIPS 2025 review guidelines.
+                    Reviews will follow the adapted version of a <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a> for qualitative research papers.
                   </p>
                 </div>
                 
@@ -168,7 +184,7 @@ export default function FAQPage() {
                     <strong>Will there be human reviewers?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    All the submissions will be reviewed by AI reviewers in the first round, following the <a href='/call-for-papers/' className="text-blue-600 hover:text-blue-800 underline">CASP</a> scoring instructions and rubric.
+                    No. All the submissions will be reviewed by AI reviewers in the first round, following an adapted version of the <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a>. Based on the scores, humans will make a selection which papers are presented at the conference.
                   </p>
                 </div>
                 
@@ -177,7 +193,7 @@ export default function FAQPage() {
                     <strong>What if there are mistakes made by the AI scientist and missed by the AI reviewer?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    We anticipate that errors will happen, and studying them will be instructive. All submissions and reviews will be publicly available on OpenReview. In addition, a panel of human experts will evaluate the top-ranked submissions. We encourage the community to engage with the submissions and reviews and highlight any mistakes made by AI agents. Understanding these failure modes is a key goal of the conference.
+                    We anticipate that errors will happen, and studying them will be instructive. All submissions and reviews will be publicly available on OpenReview. We will invite the community to engage with the submissions and reviews and highlight any mistakes made by AI agents. Understanding these failure modes is a key goal of the conference. You will receive further information after you have registered for the conference.
                   </p>
                 </div>
 
@@ -195,7 +211,7 @@ export default function FAQPage() {
                   </h3>
                   <p className="text-gray-700">
                     Yes. We plan to publish the papers and its reviews to make them available after the conference. A suitable format will be discussed at the conference. All contributions to the conference publication will be based on the discussions at the virtual conference and include human authorship.
-                    a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for science development.
+                    a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for qualitative research developments.
                   </p>
                 </div>
               </div>

@@ -203,7 +203,7 @@ export default function CallForPapersPage() {
                 </p>
 
                 <p className="text-gray-700">
-                  Every paper will also be scored on according to the <strong>CASP instructions and rubric</strong>.
+                  Every paper will also be scored on according to the <strong><a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP instructions and rubric</a></strong>.
                 </p>
 
               </div>
