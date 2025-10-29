@@ -15,7 +15,15 @@ export default function CallForPapersPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-indigo-100 section-padding">
+      <section 
+        className="section-padding relative overflow-hidden"
+        style={{
+          backgroundImage: `url(${getAssetPath("/images/hero-background-bubbles.svg")})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="container text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Call for Papers
