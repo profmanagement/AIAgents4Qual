@@ -5,7 +5,13 @@ import Image from 'next/image'
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/AIAgents4Qual' : '';
+  // For custom domain (www.aiagents4qual.org), use root paths
+  // For GitHub Pages project mode, use repo base path
+  const isCustomDomain = typeof window !== 'undefined' ? 
+    window.location.hostname === 'www.aiagents4qual.org' || window.location.hostname === 'aiagents4qual.org' :
+    process.env.NODE_ENV === 'production' && process.env.GITHUB_REPOSITORY === 'profmanagement/AIAgents4Qual';
+  
+  const basePath = (process.env.NODE_ENV === 'production' && !isCustomDomain) ? '/AIAgents4Qual' : '';
   return `${basePath}${path}`;
 };
 
