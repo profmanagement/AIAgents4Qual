@@ -36,19 +36,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Conference Registration Start</h3>
-              <p className="text-2xl font-bold text-blue-600">17th November 2025</p>
+              <p className="text-2xl font-bold text-blue-600">24th November 2025</p>
             </div>
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper submission deadline</h3>
-              <p className="text-2xl font-bold text-blue-600">31st December 2025</p>
+              <p className="text-2xl font-bold text-blue-600">31st Janary 2026</p>
             </div>
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper decision released</h3>
-              <p className="text-2xl font-bold text-blue-600">31st January 2026</p>
+              <p className="text-2xl font-bold text-blue-600">28th February 2026</p>
             </div>
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Virtual Conference</h3>
-              <p className="text-2xl font-bold text-blue-600">20th February 2026</p>
+              <p className="text-2xl font-bold text-blue-600">13th March 2026</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,12 @@ import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import { Italic } from 'lucide-react'
 
+// Helper function for GitHub Pages asset paths
+const getAssetPath = (path: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/AIAgents4Qual' : '';
+  return `${basePath}${path}`;
+};
+
 export default function CallForPapersPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -95,12 +101,16 @@ export default function CallForPapersPage() {
                   <p className="text-gray-700 mb-4">
                     Download the official Word template with AI Contribution Disclosure checklist
                   </p>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition-colors flex items-center mx-auto">
+                  <a 
+                    href={getAssetPath("/templates/Template_Paper Submission_AI Agents4QualResearch_2025.docx")}
+                    download="Template_Paper Submission_AI Agents4QualResearch_2025.docx"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition-colors flex items-center mx-auto inline-flex"
+                  >
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                     Download Word Template
-                  </button>
+                  </a>
                   <div className="mt-4 flex items-center justify-center text-red-600 text-sm">
                     <svg className="w-3 h-3 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
