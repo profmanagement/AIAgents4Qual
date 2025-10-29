@@ -1,0 +1,288 @@
+<svg width="1920" height="600" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient - clean and minimal -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Enhanced geometric shapes gradients with better visibility -->
+    <linearGradient id="shape1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.15" />
+    </linearGradient>
+    
+    <linearGradient id="shape2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.22" />
+      <stop offset="100%" style="stop-color:#4338ca;stop-opacity:0.12" />
+    </linearGradient>
+    
+    <linearGradient id="shape3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Neural network node gradient - more visible -->
+    <radialGradient id="nodeGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.3" />
+    </radialGradient>
+    
+    <!-- Connection line gradient - enhanced -->
+    <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+      <stop offset="50%" style="stop-color:#6366f1;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Glow effect - enhanced -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Text shadow filter -->
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#1e40af" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Large geometric shapes with AI terms - positioned on edges, more visible -->
+  <!-- Top-left hexagon with AI -->
+  <g>
+    <polygon points="120,60 170,35 220,60 220,110 170,135 120,110" 
+             fill="url(#shape1)" 
+             stroke="#3b82f6" 
+             stroke-width="2" 
+             opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" values="0 170 85;360 170 85" dur="20s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="170" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">AI</text>
+  </g>
+  
+  <!-- Top-right diamond with LLM -->
+  <g>
+    <polygon points="1720,90 1780,30 1840,90 1780,150" 
+             fill="url(#shape2)" 
+             stroke="#6366f1" 
+             stroke-width="2" 
+             opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" values="0 1780 90;-360 1780 90" dur="25s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="1780" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">LLM</text>
+  </g>
+  
+  <!-- Bottom-left triangle with AI4Qual -->
+  <g>
+    <polygon points="50,420 180,420 115,530" 
+             fill="url(#shape3)" 
+             stroke="#0ea5e9" 
+             stroke-width="2" 
+             opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" values="0 115 475;360 115 475" dur="18s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="115" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">AI4Qual</text>
+    <text x="115" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Research</text>
+  </g>
+  
+  <!-- Bottom-right pentagon with ChatGPT -->
+  <g>
+    <polygon points="1780,480 1820,460 1850,490 1830,530 1800,530" 
+             fill="url(#shape1)" 
+             stroke="#3b82f6" 
+             stroke-width="2" 
+             opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" values="0 1815 495;-360 1815 495" dur="22s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="1815" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">ChatGPT</text>
+  </g>
+  
+  <!-- Medium shapes with social science AI terms -->
+  <!-- Left side: Qualitative Analysis -->
+  <g>
+    <rect x="40" y="180" width="80" height="60" rx="10" 
+          fill="url(#shape2)" 
+          stroke="#6366f1" 
+          stroke-width="1.5" 
+          opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 80 210;360 80 210" dur="30s" repeatCount="indefinite"/>
+    </rect>
+    <text x="80" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Qualitative</text>
+    <text x="80" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Analysis</text>
+  </g>
+  
+  <!-- Right side: Deep Learning -->
+  <g>
+    <ellipse cx="1820" cy="220" rx="50" ry="30" 
+             fill="url(#shape3)" 
+             stroke="#0ea5e9" 
+             stroke-width="1.5" 
+             opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 1820 220;-360 1820 220" dur="28s" repeatCount="indefinite"/>
+    </ellipse>
+    <text x="1820" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Deep</text>
+    <text x="1820" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Learning</text>
+  </g>
+  
+  <!-- Top center: NLP -->
+  <g>
+    <circle cx="960" cy="80" r="35" 
+            fill="url(#shape1)" 
+            stroke="#3b82f6" 
+            stroke-width="1.5" 
+            opacity="0.5"/>
+    <text x="960" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">NLP</text>
+  </g>
+  
+  <!-- Bottom center: Machine Learning -->
+  <g>
+    <rect x="920" y="520" width="120" height="50" rx="15" 
+          fill="url(#shape2)" 
+          stroke="#6366f1" 
+          stroke-width="1.5" 
+          opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" values="0 980 545;360 980 545" dur="35s" repeatCount="indefinite"/>
+    </rect>
+    <text x="980" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Machine</text>
+    <text x="980" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#textGradient)" filter="url(#textShadow)">Learning</text>
+  </g>
+  
+  <!-- Enhanced Neural Network Pattern - more visible -->
+  <!-- Left side network -->
+  <g opacity="0.7">
+    <!-- Nodes - larger and more visible -->
+    <circle cx="90" cy="300" r="12" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="90" cy="350" r="10" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="90" cy="400" r="11" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="160" cy="280" r="9" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="160" cy="320" r="13" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="160" cy="370" r="10" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="160" cy="420" r="11" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    
+    <!-- Connections - thicker and more visible -->
+    <line x1="90" y1="300" x2="160" y2="280" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="90" y1="300" x2="160" y2="320" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="90" y1="350" x2="160" y2="320" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="90" y1="350" x2="160" y2="370" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="90" y1="400" x2="160" y2="370" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="90" y1="400" x2="160" y2="420" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Right side network -->
+  <g opacity="0.7">
+    <!-- Nodes -->
+    <circle cx="1830" cy="320" r="11" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1830" cy="370" r="12" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1830" cy="420" r="10" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1760" cy="300" r="10" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1760" cy="350" r="13" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1760" cy="400" r="9" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    <circle cx="1760" cy="440" r="11" fill="url(#nodeGradient)" filter="url(#glow)"/>
+    
+    <!-- Connections -->
+    <line x1="1830" y1="320" x2="1760" y2="300" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="1830" y1="320" x2="1760" y2="350" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="1830" y1="370" x2="1760" y2="350" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="1830" y1="370" x2="1760" y2="400" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="1830" y1="420" x2="1760" y2="400" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+    <line x1="1830" y1="420" x2="1760" y2="440" stroke="url(#connectionGradient)" stroke-width="2.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Enhanced data flow patterns - more visible -->
+  <g opacity="0.6">
+    <!-- Top data flow -->
+    <path d="M 250 120 Q 600 80 1200 100 Q 1500 110 1700 140" 
+          stroke="url(#connectionGradient)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-dasharray="8,8">
+      <animate attributeName="stroke-dashoffset" values="0;-64" dur="3s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Bottom data flow -->
+    <path d="M 280 480 Q 600 500 1200 490 Q 1500 480 1720 460" 
+          stroke="url(#connectionGradient)" 
+          stroke-width="3" 
+          fill="none" 
+          stroke-dasharray="10,10">
+      <animate attributeName="stroke-dashoffset" values="0;-80" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Social Science AI symbols - more visible -->
+  <!-- Social Network Graph (top-left) -->
+  <g transform="translate(60,130)" opacity="0.4">
+    <circle cx="0" cy="0" r="4" fill="#3b82f6"/>
+    <circle cx="20" cy="10" r="3" fill="#6366f1"/>
+    <circle cx="15" cy="-15" r="3" fill="#0ea5e9"/>
+    <circle cx="-20" cy="5" r="3" fill="#3b82f6"/>
+    <circle cx="10" cy="20" r="3" fill="#6366f1"/>
+    <line x1="0" y1="0" x2="20" y2="10" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="0" x2="15" y2="-15" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-20" y2="5" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="20" y1="10" x2="10" y2="20" stroke="#6366f1" stroke-width="2"/>
+    <line x1="15" y1="-15" x2="20" y2="10" stroke="#0ea5e9" stroke-width="2"/>
+  </g>
+  
+  <!-- Survey/Data Chart (bottom-right) -->
+  <g transform="translate(1780,380)" opacity="0.4">
+    <rect x="0" y="0" width="4" height="20" fill="#6366f1"/>
+    <rect x="8" y="5" width="4" height="15" fill="#3b82f6"/>
+    <rect x="16" y="8" width="4" height="12" fill="#0ea5e9"/>
+    <rect x="24" y="3" width="4" height="17" fill="#6366f1"/>
+    <rect x="32" y="10" width="4" height="10" fill="#3b82f6"/>
+    <line x1="0" y1="22" x2="36" y2="22" stroke="#3b82f6" stroke-width="1"/>
+  </g>
+  
+  <!-- Research Methods Symbol (top-right) -->
+  <g transform="translate(1720,180)" opacity="0.4">
+    <text font-family="serif" font-size="20" fill="#6366f1" font-weight="bold">∞</text>
+    <text x="25" font-family="serif" font-size="14" fill="#3b82f6" font-weight="bold">∑</text>
+    <text x="35" font-family="serif" font-size="12" fill="#0ea5e9" font-weight="bold">χ²</text>
+  </g>
+  
+  <!-- Interview/Conversation Symbol (bottom-left) -->
+  <g transform="translate(90,480)" opacity="0.4">
+    <ellipse cx="0" cy="0" rx="15" ry="8" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <ellipse cx="25" cy="5" rx="12" ry="6" fill="none" stroke="#6366f1" stroke-width="2"/>
+    <path d="M -10 -5 Q -5 -10 0 -5" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M 20 0 Q 25 -3 30 0" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Enhanced floating particles -->
+  <g opacity="0.3">
+    <circle cx="400" cy="150" r="3" fill="#3b82f6">
+      <animate attributeName="cy" values="150;170;150" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1400" cy="200" r="2.5" fill="#6366f1">
+      <animate attributeName="cy" values="200;220;200" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="450" r="4" fill="#0ea5e9">
+      <animate attributeName="cy" values="450;430;450" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1500" cy="400" r="3.5" fill="#3b82f6">
+      <animate attributeName="cy" values="400;380;400" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="120" r="2.8" fill="#6366f1">
+      <animate attributeName="cy" values="120;140;120" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
