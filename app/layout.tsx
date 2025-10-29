@@ -1,7 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
 import './globals.css'
-import PasswordProtection from './components/PasswordProtection'
 
 export const metadata: Metadata = {
   title: 'AI Agents4Qual 2026',
@@ -16,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <PasswordProtection>
-          {children}
-        </PasswordProtection>
+        {children}
       </body>
     </html>
   )

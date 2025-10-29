@@ -1,7 +1,6 @@
 // app/page.tsx
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
-import PasswordProtection from './components/PasswordProtection'
 import Image from 'next/image'
 
 // Helper function for GitHub Pages asset paths
