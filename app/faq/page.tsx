@@ -54,7 +54,7 @@ export default function FAQPage() {
                     <strong>What do we mean by AI? – Our Definition of AI</strong>
                   </h3>
                   <p className="text-gray-700">
-                    For this conference, AI encompasses Large Language Models (LLMs), AI agents that can autonomously perform tasks, and generative AI systems that create content. This includes models like chatbots, custom research agents (e.g., DeepResearch and equivalents) or AI integration into existing CAQDAS software that can analyze data, generate hypotheses, write code, and produce scientific manuscripts with minimal human intervention. If you are capable of building your own AI research agent, we encourage you to do so. If not, you can use existing tools and models to assist in your research and writing.
+                    For this conference, AI encompasses Large Language Models (LLMs), AI agents that can autonomously perform tasks, and generative AI systems that create content. This includes models like chatbots, custom research agents (e.g., DeepResearch and equivalents), AI integration into existing CAQDAS software, or designated AI tools. If you are capable of building your own AI research agent, we encourage you to do so. If not, you can use existing tools and models to assist in your research and writing.
                   </p>
                 </div>
 

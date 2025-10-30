@@ -52,11 +52,11 @@ export default function Home() {
               <p className="text-2xl font-bold text-blue-600">24th November 2025</p>
             </div>
             <div className="card text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper submission deadline</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper Submission Deadline</h3>
               <p className="text-2xl font-bold text-blue-600">31st Janary 2026</p>
             </div>
             <div className="card text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper decision released</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper Decision Released</h3>
               <p className="text-2xl font-bold text-blue-600">28th February 2026</p>
             </div>
             <div className="card text-center">

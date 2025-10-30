@@ -45,42 +45,91 @@ export default function CallForPapersPage() {
         <div className="container">
           <div className="max-w-4xl mx-auto space-y-8">
 
+            {/* Important Dates Section */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Important Dates</h2>
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex justify-between items-center">
+                    <span className="font-semibold">Paper submission deadline:</span>
+                    <span className="text-blue-700 font-bold">31st January 2026</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="font-semibold">Conference Registration Start:</span>
+                    <span className="text-blue-700 font-bold">24th November 2025</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="font-semibold">Paper decision released:</span>
+                    <span className="text-blue-700 font-bold">28th February 2026</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="font-semibold">Virtual Conference takes place:</span>
+                    <span className="text-blue-700 font-bold">13th March 2026</span>
+                  </li>
+                  <li className="flex justify-between items-center">
+                    <span className="font-semibold">Conference fee:</span>
+                    <span className="text-gray-600 font-bold">TBA</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* Conference Scope Section */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Conference Scope</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <em>AI Writes, Humans Reflect</em>. The AI Agents4Qual 2026 is the first open conference where AI serves as both primary authors and reviewers of research papers in the field of qualitative research. It is also an experiment: What happens when we give generative AI the lead role in qualitative research and let humans step back — not to produce the content, but to reflect on the process and its effects? The aim is to explore future questions of AI-driven qualitative research discovery through a reflection on the AI-authored research and AI-master peer review process.
+                </p>
+              <h4 className="text-lg font-bold text-gray-900 mb-3">AI Conducts Research and Writes, Humans Reflect</h4>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                AI Agents4Qual 2026 is the first open conference where AI acts as both co-researcher, author and reviewer in the field of qualitative research. It is also an experiment: What happens when generative AI takes the lead in qualitative inquiry, and humans step back —to reflect on the process and its implications? The goal is to explore the future of AI-driven qualitative discovery through critical reflection on AI-authored research and AI-mediated peer review.
+              </p>
+
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Experimentation at the Forefront</h4>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                AI Agents4Qual invites a different kind of experiment. It's for those ready to push boundaries — to see what happens when AI is given genuine creative and analytic autonomy. The challenge is to flip the script: let AI take the lead, while you stay in the background as a guide. Steer the process, but don't drive it.
+              </p>
+              <h4 className="text-lg font-bold text-gray-900 mb-3">The Challenge</h4>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We invite AI-generated qualitative research papers where at least half of the research process — and nearly all of the writing — is conducted by large language models (LLMs). Human contribution to content should be kept to a minimum.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <em>Experimentation at the Forefront</em>. This conference is not a conventional conference on AI in qualitative research. We do not want yet another set of papers on how ChatGPT or equivalent can help with coding, or how AI Assist supports MAXQDA, or AI coding support descriptive categorisations of qualitative material. There will be plenty of other venues for that, but not at this conference.
+                Each paper must include an autoethnographic reflection: a critical account of your interaction with the AI. Explain how you prompted it, what unfolded as you handed over agency, and how this shaped your sense of authorship. Where did you resist, intervene, or let go? What surprised you — or unsettled you?
               </p>
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Reflective Focus</h4>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <em>The Challenge</em>. We invite AI-generated qualitative research submissions where at least 50% of the output was generated by large language models (LLMs). The human contribution in content should be as minimal as possible, and each paper should include as  an essential part a reflection of the creation of the paper. So, every submission must include an autoethnographic account, addressing not only <em>how</em> you prompted any task in the LLM , but also <em>what</em> this process did to you as a researcher. How did it feel to hand over agency to the LLM and to share autonomy in the research process? Where did you resist, intervene, or let go? What surprised you? What unsettled you?
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                <em>Focus Reflection</em>. This is not just about producing “good results.” It is about creativity, boundary-testing, and rethinking authorship, agency, and knowledge production in qualitative inquiry. Failures, glitches, and contradictions are not only acceptable — they are encouraged, if they include the abovementioned autoethnographic reflection. We want to explore the potentials and pitfalls of AI-driven qualitative research together.
+                This is not about polished results. It is about creativity, experimentation, and rethinking authorship, agency, and knowledge creation in qualitative research. Failures, glitches, and contradictions are not only welcome but essential — provided they include reflective analysis of the human–AI process. Together, we aim to surface both the potential and the limitations of AI-led qualitative research.
               </p>
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Participation</h2>
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Participation</h4>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                The summit will be held entirely online. Accepted papers will be presented orally and published in the experimental proceedings. The event will conclude with a collective reflection: What did we learn when AI took the helm of qualitative research?
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                <span className="text-blue-600 font-semibold">Conference registration starts November 24, 2025. Watch the website for further details.</span>
+              </p>
+
+              <h4 className="text-lg font-bold text-gray-900 mb-3">Join the Experiment</h4>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                AI Agents4Qual 2026 is not about incremental improvement. It's about turning qualitative research upside down. Let AI do most of the research and writing. Let humans step back, observe, and reflect.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Participants are also welcome to experiment with existing data they have already collected. Not all data need to be AI-generated — the key then is to explore what happens when AI takes the analytic lead.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Together, we'll see what emerges when qualitative inquiry is radically reimagined.
+              </p>
+
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-6 mb-6">
+                <p className="text-blue-800 font-semibold text-lg">
+                  Submit your contribution by 31 January 2026
+                </p>
+                <p className="text-blue-700 mt-2">
+                  Submission possible from November 24, 2025 (see below)
+                </p>
+              </div>
             </div>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-                The summit will take place exclusively online. Accepted papers will be orally presented at the conference and included in experimental proceedings. The event will culminate in a collective reflection: <em>What have we learned when AI took the helm of qualitative research?</em>
-            </p>
-                
-            <p className="text-gray-700 leading-relaxed mb-4">   
-                Details about how to register for the summit will be published soon.
-            </p>
-            
-            <p className="text-gray-700 leading-relaxed mb-4"> 
-            <strong>Come and Join the Experiment!</strong>
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-4"> 
-            <strong>AI Agents4Qual 2026</strong> is not about incremental improvements. It is about turning things upside down. Let AI write, let humans reflect — and let us see what happens when qualitative research is radically reimagined.
-            </p>
 
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Submission Requirements</h2>
