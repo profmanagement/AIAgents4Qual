@@ -140,15 +140,55 @@ export default function CallForPapersPage() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Main Paper</h3>
 
               <div className="space-y-4 mb-6">
-                <ul className="space-y-2 text-gray-700">
-                  <li>• <strong>Papers must be predominantly authored by generative AI systems</strong> (ChatGPT, Claude, LLaMA, etc.).</li>
-                  <li>• <strong>Authors must disclose and reflect</strong> on the distribution of roles between AI and human.</li>
-                  <li>• <strong>Each submission must include an autoethnographic reflection:</strong> What happened when you gave AI the lead, and how did it affect you as a scholar?</li>
-                  <li>• <strong>Submissions that reduce AI to a mere assistant or tool</strong> (e.g. coding support, summarization) will not be considered.</li>
-                  <li>• <strong>Page Limit:</strong> Submissions must be no more than 8 pages, excluding references and required statements.</li>
-                  <li>• <strong>Template Requirement:</strong> All papers must use the official conference template (Link to page), which includes a mandatory AI Contribution Disclosure checklist.</li>
-                  <li>• <strong>Submission Platform:</strong> Submissions must be made via <a href="https://openreview.net" className="text-blue-600 underline hover:text-blue-800">OpenReview</a>.</li>
-                  <li>• <strong>Anonymity:</strong> Submissions must be anonymous and should not include author names, affiliations, or other identifying information in the main text.</li>
+                <ul className="space-y-3 text-gray-700 pl-6">
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>AI Authorship:</strong> Papers must be predominantly authored by generative AI systems (ChatGPT, Claude, LLaMA, etc.).
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Role Disclosure:</strong> Authors must disclose and reflect on the distribution of roles between AI and human (see template below).
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Autoethnographic Reflection:</strong> Each submission must include an autoethnographic reflection: What happened when you gave AI the lead, and how did it affect you as a scholar?
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>AI-Led Research Only:</strong> Submissions that reduce AI to a mere assistant or tool (e.g., coding support, summarization) will not be considered.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Size Limit:</strong> Submissions must be a maximum of 3,500 words excluding references and author reflection.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Template Requirement:</strong> All papers must use the official conference template, which includes a mandatory AI Contribution Disclosure checklist.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Submission Platform:</strong> Submissions must be made via OpenReview.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <div>
+                      <strong>Anonymity:</strong> Submissions must be anonymous and should not include author names, affiliations, or other identifying information in the main text.
+                    </div>
+                  </li>
                 </ul>
               </div>
 
@@ -178,53 +218,12 @@ export default function CallForPapersPage() {
                     <svg className="w-3 h-3 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                     </svg>
-                    Please make sure to carefully complete the required checklist and the statements (see below)
+                    Please make sure to add an author reflection at the end of your manuscript and carefully complete the required checklist.
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Three Statement Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* AI Research Autonomy Disclosure */}
-              <div className="card text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                  </svg>
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">AI Research Autonomy Disclosure</h4>
-                <p className="text-gray-700 text-sm">
-                  We will provide an AI usage checklist that authors must complete for each submission. This checklist will document the roles of both AI and human contributors across various aspects of the research project, including hypothesis generation, method development, data handling and analysis, results interpretation, writing, and visualization.
-                </p>
-              </div>
-
-              {/* Responsible AI Statement */}
-              <div className="card text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                  </svg>
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Responsible AI Statement</h4>
-                <p className="text-gray-700 text-sm">
-                  Each submission must adhere to the <a href="https://www.apa.org/ethics/code" className="text-blue-600 underline hover:text-blue-800">APA Code of Ethics</a> and include a statement discussing the broader impact of the research, as well as any precautions taken to ensure the safe deployment of the AI scientist. This statement will not count toward the page limit.
-                </p>
-              </div>
-
-              {/* Reproducibility Statement */}
-              <div className="card text-center">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Reproducibility Statement</h4>
-                <p className="text-gray-700 text-sm">
-                  Authors are strongly encouraged to include a paragraph-long Reproducibility Statement at the end of the main text to discuss the efforts that have been made to ensure reproducibility. This does not count toward the page limit.
-                </p>
-              </div>
-            </div>
 
             {/* Review Process Section */}
             <div>
@@ -249,7 +248,7 @@ export default function CallForPapersPage() {
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">Minimal Human Oversight</h4>
                   <p className="text-gray-700">
-                    Human organizers will only look at the top-ranked submissions and may select from them for presentation. 
+                    Human organizers will take a closer look at the top-ranked submissions and select from them for presentation. 
                   </p>
                 </div>
                 
@@ -262,32 +261,13 @@ export default function CallForPapersPage() {
 
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  Reviews will be carried out by three large language models, guided by a shared framework. So, each paper will be evaluated by multiple AI systems to avoid biases from one particular model. Human organizers will only look at the top-ranked submissions and may select from them for presentation. The review process itself is part of the experiment: after the conference, the community will reflect on the quality of AI reviews compared to human judgment. Each paper will be evaluated by multiple AI systems to avoid biases from one particular model.
-                </p>
-
-                <p className="text-gray-700">
-                  Every paper will also be scored on according to the <strong><a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP instructions and rubric</a></strong>.
+                  We will use three large language models to review each submission. Each model will independently apply these <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">review criteria</a>. The review process is itself part of the experiment. After the conference, the community will evaluate how well the AI reviews worked across all submissions. It is possible the best paper will not be selected for presentation. Maybe it will. This is part of what we want to study.
                 </p>
 
               </div>
             </div>
 
-            <div className="card">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Model Requirements</h3>
-              <p className="text-gray-700">
-                You may use any open-source or proprietary models, multiple agents, tools (e.g., ChatGPT, Claude, Gemini), or build your own research agent. The key requirement is that the research must be primarily conducted and written by AI agents.
-              </p>
-            </div>
-
-            <div className="card">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Contact</h3>
-              <p className="text-gray-700">
-                For questions about submissions or the conference, please contact us at{' '}
-                <a href="mailto:ai.agents4qual@gmail.com" className="text-blue-600 hover:text-blue-800">
-                  ai.agents4qual@gmail.com
-                </a>
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
