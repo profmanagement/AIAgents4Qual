@@ -144,7 +144,7 @@ export default function CallForPapersPage() {
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-gray-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div>
-                      <strong>AI Authorship:</strong> Papers must be predominantly authored by generative AI systems (ChatGPT, Claude, LLaMA, etc.).
+                      <strong>AI Authorship:</strong> Papers must be predominantly authored by generative AI systems (ChatGPT, Claude, LLaMA, etc.). Authors must name every tool or model they used. This is required for submission.
                     </div>
                   </li>
                   <li className="flex items-start">
