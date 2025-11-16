@@ -56,7 +56,7 @@ export default function CallForPapersPage() {
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Conference Registration Start:</span>
-                    <span className="text-blue-700 font-bold">24th November 2025</span>
+                    <span className="text-blue-700 font-bold">15th January 2026</span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Paper decision released:</span>
@@ -68,7 +68,7 @@ export default function CallForPapersPage() {
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Conference fee:</span>
-                    <span className="text-gray-600 font-bold">TBA</span>
+                    <span className="text-blue-700 font-bold">20 EUR early bird / 30 EUR regular (after February 15th, 2026)</span>
                   </li>
                 </ul>
               </div>
@@ -107,7 +107,7 @@ export default function CallForPapersPage() {
                 The summit will be held entirely online. Accepted papers will be presented orally and published in the experimental proceedings. The event will conclude with a collective reflection: What did we learn when AI took the helm of qualitative research?
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <span className="text-blue-600 font-semibold">Conference registration starts November 24, 2025. Watch the website for further details.</span>
+                <span className="text-blue-600 font-semibold">Conference registration starts 15th January 2026. Watch the website for further details.</span>
               </p>
 
               <h4 className="text-lg font-bold text-gray-900 mb-3">Join the Experiment</h4>
@@ -261,7 +261,7 @@ export default function CallForPapersPage() {
 
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  We will use three large language models to review each submission. Each model will independently apply these <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">review criteria</a>. The review process is itself part of the experiment. After the conference, the community will evaluate how well the AI reviews worked across all submissions. It is possible the best paper will not be selected for presentation. Maybe it will. This is part of what we want to study.
+                  We will use three large language models to review each submission. Each model will independently apply these <a href={getAssetPath("/templates/AI Reviewer Checklist_AIAgents4Qual Conference.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">review criteria</a>. The review process is itself part of the experiment. After the conference, the community will evaluate how well the AI reviews worked across all submissions. It is possible the best paper will not be selected for presentation. Maybe it will. This is part of what we want to study.
                 </p>
 
               </div>

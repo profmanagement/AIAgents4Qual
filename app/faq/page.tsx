@@ -180,7 +180,7 @@ export default function FAQPage() {
                     <strong>What review template do you use?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    Reviews will follow the adapted version of a <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a> for qualitative research papers.
+                    Reviews will follow the adapted version of a <a href={getAssetPath("/templates/AI Reviewer Checklist_AIAgents4Qual Conference.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a> for qualitative research papers.
                   </p>
                 </div>
                 
@@ -198,7 +198,7 @@ export default function FAQPage() {
                     <strong>Will there be human reviewers?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    No. All the submissions will be reviewed by AI reviewers in the first round, following an adapted version of the <a href={getAssetPath("/templates/AI Reviewer Checklist AIAgent4QualResearch.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a>. Based on the scores, humans will make a selection which papers are presented at the conference.
+                    No. All the submissions will be reviewed by AI reviewers in the first round, following an adapted version of the <a href={getAssetPath("/templates/AI Reviewer Checklist_AIAgents4Qual Conference.pdf")} className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">CASP checklist</a>. Based on the scores, humans will make a selection which papers are presented at the conference.
                   </p>
                 </div>
                 
