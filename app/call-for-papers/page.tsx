@@ -224,6 +224,21 @@ export default function CallForPapersPage() {
               </div>
             </div>
 
+            {/* OpenReview Information Section */}
+            <div className="card bg-blue-50 border-l-4 border-blue-600">
+              <h4 className="text-lg font-semibold text-blue-800 mb-3">
+                About OpenReview - Submission Platform
+              </h4>
+              <p className="text-gray-700 mb-4">
+                <strong>To successfully submit your paper, please register for an account at <a href="https://openreview.net" className="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">openreview.net</a> first.</strong>
+              </p>
+              <p className="text-gray-700 mb-4">
+                OpenReview is an online platform for open peer review and publication of academic research papers. As a non-profit organisation, it is dedicated to advancing science through improved peer review processes. Users are required to create a detailed profile that includes their affiliations. For users without affiliations, this process can take up to two weeks.
+              </p>
+              <p className="text-gray-700">
+                For more details about creating your OpenReview profile, see: <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview" className="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">OpenReview Registration Guide</a>
+              </p>
+            </div>
 
             {/* Review Process Section */}
             <div>
