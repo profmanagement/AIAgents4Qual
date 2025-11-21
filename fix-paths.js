@@ -8,15 +8,9 @@ function fixPathsInFile(filePath) {
   try {
     let content = fs.readFileSync(filePath, 'utf8');
     
-    // Fix CSS paths
-    content = content.replace(/href="\/_next\//g, 'href="./_next/');
-    content = content.replace(/src="\/_next\//g, 'src="./_next/');
-    
-    // Fix other asset paths
-    content = content.replace(/url\(\/_next\//g, 'url(./_next/');
-    
-    fs.writeFileSync(filePath, content);
-    console.log(`Fixed paths in: ${filePath}`);
+    // For GitHub Pages with custom domain, absolute paths work best
+    // Keep the absolute paths as they are - don't change them to relative
+    console.log(`Processed (no changes needed): ${filePath}`);
   } catch (error) {
     console.error(`Error processing ${filePath}:`, error.message);
   }
@@ -37,7 +31,8 @@ function processDirectory(dir) {
   });
 }
 
-console.log('Starting to fix absolute paths in built files...');
+console.log('Starting GitHub Pages deployment preparation...');
+console.log('For custom domain deployment, keeping absolute paths as-is');
 processDirectory(outDir);
 
 // Create .nojekyll file for GitHub Pages
@@ -49,4 +44,4 @@ try {
   console.error('Error creating .nojekyll file:', error.message);
 }
 
-console.log('Path fixing completed!');
+console.log('GitHub Pages preparation completed!');
