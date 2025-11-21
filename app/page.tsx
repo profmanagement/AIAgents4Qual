@@ -5,13 +5,22 @@ import Image from 'next/image'
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {
-  // For local development, always use root paths
-  if (process.env.NODE_ENV === 'development') {
+  // In development, always use simple paths
+  if (process.env.NODE_ENV !== 'production') {
     return path;
   }
   
-  // For production: Default to custom domain behavior
-  // GitHub Pages will handle the routing correctly
+  // In production, we need to handle both GitHub Pages and custom domain
+  if (typeof window !== 'undefined') {
+    // Client-side: check actual hostname
+    const hostname = window.location.hostname;
+    if (hostname.includes('aiagents4qual.org')) {
+      return path; // Custom domain - use root paths
+    }
+    return `/AIAgents4Qual${path}`; // GitHub Pages - use repo prefix
+  }
+  
+  // Server-side: default to custom domain paths (safer for SSG)
   return path;
 };
 
