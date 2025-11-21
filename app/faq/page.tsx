@@ -4,13 +4,17 @@ import Footer from '../components/Footer'
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {
-  // For custom domain (www.aiagents4qual.org), use root paths
-  // For GitHub Pages project mode, use repo base path
+  // For local development, always use root paths
+  if (process.env.NODE_ENV === 'development') {
+    return path;
+  }
+  
+  // For production: check if we're on custom domain
   const isCustomDomain = typeof window !== 'undefined' ? 
     (window.location.hostname.includes('aiagents4qual.org')) :
     false;
   
-  const basePath = (process.env.NODE_ENV === 'production' && !isCustomDomain) ? '/AIAgents4Qual' : '';
+  const basePath = !isCustomDomain ? '/AIAgents4Qual' : '';
   return `${basePath}${path}`;
 };
 
