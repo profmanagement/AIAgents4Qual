@@ -5,23 +5,18 @@ import { Italic } from 'lucide-react'
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {
-  // In development, always use simple paths
-  if (process.env.NODE_ENV !== 'production') {
+  // For local development, always use root paths
+  if (process.env.NODE_ENV === 'development') {
     return path;
   }
   
-  // In production, we need to handle both GitHub Pages and custom domain
-  if (typeof window !== 'undefined') {
-    // Client-side: check actual hostname
-    const hostname = window.location.hostname;
-    if (hostname.includes('aiagents4qual.org')) {
-      return path; // Custom domain - use root paths
-    }
-    return `/AIAgents4Qual${path}`; // GitHub Pages - use repo prefix
-  }
+  // For production: check if we're on custom domain
+  const isCustomDomain = typeof window !== 'undefined' ? 
+    (window.location.hostname.includes('aiagents4qual.org')) :
+    false;
   
-  // Server-side: default to custom domain paths (safer for SSG)
-  return path;
+  const basePath = !isCustomDomain ? '/AIAgents4Qual' : '';
+  return `${basePath}${path}`;
 };
 
 export default function CallForPapersPage() {
