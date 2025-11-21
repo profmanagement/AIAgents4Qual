@@ -39,4 +39,14 @@ function processDirectory(dir) {
 
 console.log('Starting to fix absolute paths in built files...');
 processDirectory(outDir);
+
+// Create .nojekyll file for GitHub Pages
+const nojekyllPath = path.join(outDir, '.nojekyll');
+try {
+  fs.writeFileSync(nojekyllPath, '');
+  console.log('Created .nojekyll file for GitHub Pages');
+} catch (error) {
+  console.error('Error creating .nojekyll file:', error.message);
+}
+
 console.log('Path fixing completed!');
