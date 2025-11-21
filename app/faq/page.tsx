@@ -9,13 +9,9 @@ const getAssetPath = (path: string) => {
     return path;
   }
   
-  // For production: check if we're on custom domain
-  const isCustomDomain = typeof window !== 'undefined' ? 
-    (window.location.hostname.includes('aiagents4qual.org')) :
-    false;
-  
-  const basePath = !isCustomDomain ? '/AIAgents4Qual' : '';
-  return `${basePath}${path}`;
+  // For production: assume custom domain by default (safer for SSG)
+  // Custom domain handles root paths correctly
+  return path;
 };
 
 export default function FAQPage() {
