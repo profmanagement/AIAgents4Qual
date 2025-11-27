@@ -125,9 +125,6 @@ export default function CallForPapersPage() {
                 <p className="text-blue-800 font-semibold text-lg">
                   Submit your contribution by 31 January 2026
                 </p>
-                <p className="text-blue-700 mt-2">
-                  Submission possible from November 24, 2025 (see below)
-                </p>
               </div>
             </div>
 
@@ -224,19 +221,27 @@ export default function CallForPapersPage() {
               </div>
             </div>
 
-            {/* OpenReview Information Section */}
-            <div className="card bg-blue-50 border-l-4 border-blue-600">
-              <h4 className="text-lg font-semibold text-blue-800 mb-3">
-                About OpenReview - Submission Platform
+            {/* Submission Instructions */}
+            <div className="card bg-green-50 border-l-4 border-green-600">
+              <h4 className="text-lg font-semibold text-green-800 mb-4">
+                Submit Your Paper
               </h4>
               <p className="text-gray-700 mb-4">
-                <strong>To successfully submit your paper, please register for an account at <a href="https://openreview.net" className="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">openreview.net</a> first.</strong>
+                You can submit your paper here: <a href="https://openreview.net/group?id=AIAgents4Qual.org/2026/Conference#tab-recent-activity" className="text-green-600 underline hover:text-green-800" target="_blank" rel="noopener noreferrer"><strong>AIAgents4Qual 2026 Conference</strong></a>
               </p>
-              <p className="text-gray-700 mb-4">
-                OpenReview is an online platform for open peer review and publication of academic research papers. As a non-profit organisation, it is dedicated to advancing science through improved peer review processes. Users are required to create a detailed profile that includes their affiliations. For users without affiliations, this process can take up to two weeks.
-              </p>
-              <p className="text-gray-700">
-                For more details about creating your OpenReview profile, see: <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview" className="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener noreferrer">OpenReview Registration Guide</a>
+              
+              <h5 className="text-md font-semibold text-green-800 mb-3">How it works</h5>
+              <div className="space-y-3 text-gray-700">
+                <p>1. Click on <strong>Login</strong>. Create an account on OpenReview, if you do not have one yet.</p>
+                <p>2. Click on the button: <strong>AIAgents4Qual 2026 Conference Submission</strong>, enter the required information and upload your submission.</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-4 mt-4 border border-green-200">
+                <img src="/images/openreview-submission.png" alt="OpenReview submission interface" className="w-full rounded" />
+              </div>
+              
+              <p className="text-gray-600 text-sm mt-4">
+                For help with creating your profile, see the <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview" className="text-green-600 underline hover:text-green-800">OpenReview Registration Guide</a>.
               </p>
             </div>
 
@@ -244,7 +249,7 @@ export default function CallForPapersPage() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Review Process</h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Card 1: Multi-AI Review Panel */}
                 <div className="card text-center">
                   <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -264,6 +269,17 @@ export default function CallForPapersPage() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">Minimal Human Oversight</h4>
                   <p className="text-gray-700">
                     Human organizers will take a closer look at the top-ranked submissions and select from them for presentation. 
+                  </p>
+                </div>
+
+                {/* Card 3: OpenReview Platform */}
+                <div className="card text-center">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-white font-bold text-lg">3</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3">OpenReview</h4>
+                  <p className="text-gray-700">
+                    OpenReview is a non-profit platform for open peer review and scholarly publishing. It handles the full submission and review workflow for this conference.
                   </p>
                 </div>
                 
