@@ -123,7 +123,7 @@ export default function CallForPapersPage() {
 
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-6 mb-6">
                 <p className="text-blue-800 font-semibold text-lg">
-                  Submit your contribution by 31 January 2026
+                  Submit your contribution at latest by 31 January 2026
                 </p>
               </div>
             </div>
@@ -222,26 +222,26 @@ export default function CallForPapersPage() {
             </div>
 
             {/* Submission Instructions */}
-            <div className="card bg-green-50 border-l-4 border-green-600">
-              <h4 className="text-lg font-semibold text-green-800 mb-4">
+            <div className="card bg-orange-50 border-l-4 border-orange-500">
+              <h4 className="text-lg font-semibold text-orange-800 mb-4">
                 Submit Your Paper
               </h4>
               <p className="text-gray-700 mb-4">
-                You can submit your paper here: <a href="https://openreview.net/group?id=AIAgents4Qual.org/2026/Conference#tab-recent-activity" className="text-green-600 underline hover:text-green-800" target="_blank" rel="noopener noreferrer"><strong>AIAgents4Qual 2026 Conference</strong></a>
+                You can submit your paper here: <a href="https://openreview.net/group?id=AIAgents4Qual.org/2026/Conference#tab-recent-activity" className="text-orange-600 underline hover:text-orange-700" target="_blank" rel="noopener noreferrer"><strong>AIAgents4Qual 2026 Conference</strong></a>
               </p>
               
-              <h5 className="text-md font-semibold text-green-800 mb-3">How it works</h5>
+              <h5 className="text-md font-semibold text-orange-800 mb-3">How it works</h5>
               <div className="space-y-3 text-gray-700">
                 <p>1. Click on <strong>Login</strong>. Create an account on OpenReview, if you do not have one yet.</p>
                 <p>2. Click on the button: <strong>AIAgents4Qual 2026 Conference Submission</strong>, enter the required information and upload your submission.</p>
               </div>
               
-              <div className="bg-white rounded-lg p-4 mt-4 border border-green-200">
+              <div className="bg-white rounded-lg p-4 mt-4 border border-orange-200">
                 <img src="/images/openreview-submission.png" alt="OpenReview submission interface" className="w-full rounded" />
               </div>
               
               <p className="text-gray-600 text-sm mt-4">
-                For help with creating your profile, see the <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview" className="text-green-600 underline hover:text-green-800">OpenReview Registration Guide</a>.
+                For help with creating your profile, see the <a href="https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview" className="text-orange-600 underline hover:text-orange-700">OpenReview Registration Guide</a>.
               </p>
             </div>
 
