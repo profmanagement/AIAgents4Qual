@@ -14,9 +14,7 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  experimental: {
-    optimizeCss: true,
-  },
+  // Remove experimental optimizeCss as it requires critters package
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },

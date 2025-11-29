@@ -33,12 +33,12 @@ export default function PerformanceMonitor() {
     if ('performance' in window) {
       window.addEventListener('load', () => {
         setTimeout(() => {
-          const perfData = performance.getEntriesByType('navigation')[0]
+          const perfData = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming
           if (perfData) {
             // Log performance metrics for debugging
-            console.log('Page Load Time:', perfData.loadEventEnd - perfData.navigationStart)
-            console.log('DOM Content Loaded:', perfData.domContentLoadedEventEnd - perfData.navigationStart)
-            console.log('First Paint:', perfData.responseEnd - perfData.navigationStart)
+            console.log('Page Load Time:', perfData.loadEventEnd - perfData.startTime)
+            console.log('DOM Content Loaded:', perfData.domContentLoadedEventEnd - perfData.startTime)
+            console.log('Response Time:', perfData.responseEnd - perfData.startTime)
           }
         }, 0)
       })
