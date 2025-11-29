@@ -1,6 +1,29 @@
 // app/faq/page.tsx
+import type { Metadata } from 'next'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
+
+export const metadata: Metadata = {
+  title: 'FAQ - AI Agents4Qual 2026',
+  description: 'Frequently asked questions about AI Agents4Qual 2026 conference. Get answers about submissions, participation, and conference details.',
+  openGraph: {
+    title: 'FAQ - AI Agents4Qual 2026',
+    description: 'Get answers to frequently asked questions about the AI Agents for Science conference 2026.',
+    url: 'https://aiagents4qual.org/faq',
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'AI Agents4Qual 2026 FAQ - Frequently Asked Questions',
+      },
+    ],
+  },
+  twitter: {
+    title: 'FAQ - AI Agents4Qual 2026',
+    description: 'Get answers to frequently asked questions about the AI Agents for Science conference 2026.',
+  },
+}
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {

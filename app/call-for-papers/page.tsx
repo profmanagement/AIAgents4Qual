@@ -1,7 +1,30 @@
 // app/call-for-papers/page.tsx
+import type { Metadata } from 'next'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import { Italic } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Call for Papers - AI Agents4Qual 2026',
+  description: 'Submit your research to AI Agents4Qual 2026. We welcome papers on AI-driven scientific discovery, automated peer review, and transparent AI research methodologies.',
+  openGraph: {
+    title: 'Call for Papers - AI Agents4Qual 2026',
+    description: 'Submit your research to the premier conference on AI Agents for Science. Deadline: March 15, 2026. Submit via OpenReview.',
+    url: 'https://aiagents4qual.org/call-for-papers',
+    images: [
+      {
+        url: '/images/og-image-cfp.png',
+        width: 1200,
+        height: 630,
+        alt: 'AI Agents4Qual 2026 Call for Papers - Submit Your Research',
+      },
+    ],
+  },
+  twitter: {
+    title: 'Call for Papers - AI Agents4Qual 2026',
+    description: 'Submit your research to the premier conference on AI Agents for Science. Deadline: March 15, 2026.',
+  },
+}
 
 // Helper function for GitHub Pages asset paths
 const getAssetPath = (path: string) => {

@@ -21,16 +21,18 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        className="section-padding relative overflow-hidden"
-        style={{
-          backgroundImage: `url(${getAssetPath("/images/hero-background-bubbles.svg")})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        <div className="container text-center">
+      <section className="section-padding relative overflow-hidden">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${getAssetPath("/images/hero-background-bubbles.svg")})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            willChange: 'transform'
+          }}
+        />
+        <div className="container text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Open Conference of AI Agents for Qualitative Research 2026
           </h1>

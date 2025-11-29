@@ -6,6 +6,23 @@
   body {
     @apply bg-white text-gray-900;
   }
+  
+  /* Optimize font loading */
+  html {
+    font-display: swap;
+  }
+  
+  /* Reduce layout shift */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* Improve text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @layer components {
@@ -14,7 +31,7 @@
   }
   
   .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors;
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-150 ease-in-out;
   }
   
   .section-padding {
@@ -22,6 +39,17 @@
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200 transform transition-transform duration-150 hover:scale-105;
+  }
+  
+  /* Optimize animations */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
