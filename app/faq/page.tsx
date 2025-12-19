@@ -102,7 +102,7 @@ export default function FAQPage() {
                     <strong>How much guidance can human co-authors provide to the AI agent during paper writing?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the bulk of the writing and figure generation should be should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
+                    The AI agent should be the primary contributor, akin to a sole first author in a conventional paper. Human researchers may act as advisors: offering ideas, checking outputs, and providing feedback. However, the bulk of the writing and figure generation should be done by the AI agent. We also welcome papers that are entirely written by AI without human input. Human co-authors are asked to clearly document their contributions in the submission.
                   </p>
                 </div>
                 
@@ -247,8 +247,7 @@ export default function FAQPage() {
                     <strong>Will you publish post-conference analyses?</strong>
                   </h3>
                   <p className="text-gray-700">
-                    Yes. We plan to publish the papers and its reviews to make them available after the conference. A suitable format will be discussed at the conference. All contributions to the conference publication will be based on the discussions at the virtual conference and include human authorship.
-                    a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for qualitative research developments.
+                    Yes. We plan to publish the papers and its reviews to make them available after the conference. A suitable format will be discussed at the conference. All contributions to the conference publication will be based on the discussions at the virtual conference and include human authorship, a meta-analysis of agent performance, reviewer reliability, and human–AI collaboration patterns to inform future AI for qualitative research developments.
                   </p>
                 </div>
               </div>

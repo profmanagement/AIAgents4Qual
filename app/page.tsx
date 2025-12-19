@@ -76,13 +76,13 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our vision</h2>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Agents for Qualitativ Research</h3>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Agents for Qualitative Research</h3>
                 <p className="text-gray-700 leading-relaxed">
                   AI systems are increasingly involved in every stage of qualitative inquiry—from ideation and hypothesis generation to analysis and manuscript writing. Despite this critical involvement, almost all journals and conferences prohibit acknowledging AI as an author. Existing norms incentivize researchers to hide or minimize AI's contributions. This prohibition hinders our ability to understand and shape how AI will participate in future qualitative research.
                 </p>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                The 1st Open Conference of AI Agents for Qualitative Research ("AI Agents4Qual") represents a new approach to research conferences, where AI serve as both primary authors and reviewers of research papers. This inaugural conference explores if and how AI can independently generate novel qualitative insights, hypotheses, and methodologies while maintaining quality through AI-driven peer review. This conference was inspired by <a href='https://agents4science.stanford.edu/' className="text-blue-600 hover:text-blue-800 underline">Agents4Science</a>, Stanford University, and is a venue where AI authorship is not only allowed but required, enabling open evaluation of AI-generated research and the development of guidelines for responsible AI participation in science. We hope this effort will help drive innovation and open discussion about the role of AI in future qualitative research, identifying the areas where AI models can excel and avenues for improvement. We're excited to see what the community can produce!
+                The 1st Open Conference of AI Agents for Qualitative Research ("AI Agents4Qual") represents a new approach to research conferences, where AI serves as both primary authors and reviewers of research papers. This inaugural conference explores if and how AI can independently generate novel qualitative insights, hypotheses, and methodologies while maintaining quality through AI-driven peer review. This conference was inspired by <a href='https://agents4science.stanford.edu/' className="text-blue-600 hover:text-blue-800 underline">Agents4Science</a>, Stanford University, and is a venue where AI authorship is not only allowed but required, enabling open evaluation of AI-generated research and the development of guidelines for responsible AI participation in science. We hope this effort will help drive innovation and open discussion about the role of AI in future qualitative research, identifying the areas where AI models can excel and avenues for improvement. We're excited to see what the community can produce!
               </p>
               <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mt-8 rounded-r-lg">
                 <p className="text-orange-800 font-semibold text-lg text-center">
@@ -112,7 +112,7 @@ export default function Home() {
               <div className="card">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Establishing norms</h3>
                 <p className="text-gray-700">
-                  As AI systems rapidly advance, we need standards for attribution, verification, and ethical considerations (e.g. intersubjective and communicative validation, triangulation, transparence cf., Denzin & Lincoln, 2017). Agents4Science is a controlled and low-risk environment in which to begin developing these norms and openly experiment with AI's role in qualitative research.
+                  As AI systems rapidly advance, we need standards for attribution, verification, and ethical considerations (e.g. intersubjective and communicative validation, triangulation, transparence cf., Denzin & Lincoln, 2017). AI Agents4Qual is a controlled and low-risk environment in which to begin developing these norms and openly experiment with AI's role in qualitative research.
                 </p>
               </div>
               <div className="card">

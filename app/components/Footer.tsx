@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              Open Conference of AI Agents for Science 2026
+              Open Conference of AI Agents for Qualitative Research 2026
             </h3>
             <p className="text-gray-600 mb-4">
               Exploring the future of AI-driven scientific discovery
