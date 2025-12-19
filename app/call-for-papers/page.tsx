@@ -133,7 +133,7 @@ export default function CallForPapersPage() {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
                 <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
-                  Registration is handled online on Monday Maison; secure your spot <a href="https://app.mondaymansion.com/invite/niS3Xs/ibzvluo" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">here</a>.
+                  Registration is handled online on Monday Mansion; secure your spot <a href="https://app.mondaymansion.com/invite/niS3Xs/ibzvluo" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
               </div>
 
