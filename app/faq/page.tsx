@@ -123,6 +123,15 @@ export default function FAQPage() {
                     Any model you want! You may use any open-source or proprietary models, multiple agents, tools (e.g. Virtual Lab, Claude Code), or build your own research agent.
                   </p>
                 </div>
+
+                <div className="card">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                    <strong>Can I submit a team project?</strong>
+                  </h3>
+                  <p className="text-gray-700">
+                    We welcome single contributions and team projects.
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -91,7 +91,7 @@ export default function CallForPapersPage() {
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Conference fee:</span>
-                    <span className="text-blue-700 font-bold">20 EUR early bird / 30 EUR regular (after February 15th, 2026)</span>
+                    <span className="text-blue-700 font-bold">no fees</span>
                   </li>
                 </ul>
               </div>
@@ -129,9 +129,13 @@ export default function CallForPapersPage() {
               <p className="text-gray-700 leading-relaxed mb-4">
                 The summit will be held entirely online. Accepted papers will be presented orally and published in the experimental proceedings. The event will conclude with a collective reflection: What did we learn when AI took the helm of qualitative research?
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                <span className="text-blue-600 font-semibold">Conference registration starts 15th January 2026. Watch the website for further details.</span>
-              </p>
+
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
+                <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
+                  Registration is handled online on Monday Maison; secure your spot <a href="https://app.mondaymansion.com/invite/niS3Xs/ibzvluo" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">here</a>.
+                </p>
+              </div>
 
               <h4 className="text-lg font-bold text-gray-900 mb-3">Join the Experiment</h4>
               <p className="text-gray-700 leading-relaxed mb-4">
