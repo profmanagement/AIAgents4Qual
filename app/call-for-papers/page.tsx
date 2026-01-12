@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Call for Papers - AI Agents4Qual 2026',
     description: 'Submit your research to the premier conference on AI Agents for Science. Deadline: March 15, 2026. Submit via OpenReview.',
-    url: 'https://aiagents4qual.org/call-for-papers',
+    url: 'https://www.aiagents4qual.org/call-for-papers/',
     images: [
       {
         url: '/images/og-image-cfp.png',

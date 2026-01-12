@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FAQ - AI Agents4Qual 2026',
     description: 'Get answers to frequently asked questions about the AI Agents for Science conference 2026.',
-    url: 'https://aiagents4qual.org/faq',
+    url: 'https://www.aiagents4qual.org/faq/',
     images: [
       {
         url: '/images/og-image.png',

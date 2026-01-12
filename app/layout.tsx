@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'AI Agents4Qual 2026 Organizing Committee' }],
   creator: 'AI Agents4Qual 2026',
   publisher: 'AI Agents4Qual 2026',
-  metadataBase: new URL('https://aiagents4qual.org'),
+  metadataBase: new URL('https://www.aiagents4qual.org'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aiagents4qual.org',
+    url: 'https://www.aiagents4qual.org/',
     title: 'AI Agents4Qual 2026 - Open Conference of AI Agents for Science',
     description: 'Join us for the premier conference exploring AI-driven scientific discovery through transparent AI-authored research and AI-driven peer review. Submit your papers now!',
     siteName: 'AI Agents4Qual 2026',
