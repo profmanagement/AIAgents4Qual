@@ -91,7 +91,7 @@ export default function CallForPapersPage() {
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Conference fee:</span>
-                    <span className="text-blue-700 font-bold">no fees</span>
+                    <span className="text-blue-700 font-bold">30 EUR per seat</span>
                   </li>
                 </ul>
               </div>
@@ -133,7 +133,7 @@ export default function CallForPapersPage() {
               <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
                 <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
-                  Link for registration will folllow soon.
+                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">here</a> register for the AIAgents4Qual 2026 conference . The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a> will is also available.
                 </p>
               </div>
 
