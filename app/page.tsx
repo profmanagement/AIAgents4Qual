@@ -51,7 +51,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Conference Registration Start</h3>
-              <p className="text-2xl font-bold text-blue-600">Registration will begin soon</p>
+              <p className="text-2xl font-bold text-blue-600"><a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">Register here</a></p>
             </div>
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Paper Submission Deadline</h3>
@@ -62,7 +62,7 @@ export default function Home() {
               <p className="text-2xl font-bold text-blue-600">28th February 2026</p>
             </div>
             <div className="card text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Virtual Conference</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Virtual Conference <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a></h3>
               <p className="text-2xl font-bold text-blue-600">13th March 2026</p>
             </div>
           </div>
@@ -86,7 +86,13 @@ export default function Home() {
               </p>
               <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mt-8 rounded-r-lg">
                 <p className="text-orange-800 font-semibold text-lg text-center">
-                  🎯 Submissions now open, see <a href="/call-for-papers/" className="text-orange-600 hover:text-orange-700 underline">Call for Papers</a> for further detail
+                  🎯 Submissions are closed now, see <a href="/call-for-papers/" className="text-orange-600 hover:text-orange-700 underline">Call for Papers</a> for further detail
+                </p>
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
+                <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
+                <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
+                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">here register</a> for the AIAgents4Qual 2026 conference . The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a> is also available.
                 </p>
               </div>
               <p className="text-gray-700 leading-relaxed">
