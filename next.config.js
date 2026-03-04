@@ -16,6 +16,11 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  // Generate unique build ID for cache busting
+  generateBuildId: async () => {
+    // Use timestamp to ensure unique build ID on each deployment
+    return `build-${Date.now()}`
+  },
   // Remove experimental optimizeCss as it requires critters package
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',

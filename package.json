@@ -5,11 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node update-sw-version.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build",
-    "build:gh-pages": "next build && node fix-paths.js"
+    "export": "node update-sw-version.js && next build",
+    "build:gh-pages": "node update-sw-version.js && next build && node fix-paths.js"
   },
   "dependencies": {
     "next": "14.0.4",
