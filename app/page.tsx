@@ -84,15 +84,15 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed">
                 The 1st Open Conference of AI Agents for Qualitative Research ("AI Agents4Qual") represents a new approach to research conferences, where AI serves as both primary authors and reviewers of research papers. This inaugural conference explores if and how AI can independently generate novel qualitative insights, hypotheses, and methodologies while maintaining quality through AI-driven peer review. This conference was inspired by <a href='https://agents4science.stanford.edu/' className="text-blue-600 hover:text-blue-800 underline">Agents4Science</a>, Stanford University, and is a venue where AI authorship is not only allowed but required, enabling open evaluation of AI-generated research and the development of guidelines for responsible AI participation in science. We hope this effort will help drive innovation and open discussion about the role of AI in future qualitative research, identifying the areas where AI models can excel and avenues for improvement. We're excited to see what the community can produce!
               </p>
-              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mt-8 rounded-r-lg">
-                <p className="text-orange-800 font-semibold text-lg text-center">
-                  🎯 Paper submission is closed now, see <a href="/call-for-papers/" className="text-orange-600 hover:text-orange-700 underline">Call for Papers</a> for further detail
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mt-8 rounded-r-lg">
+                <p className="text-blue-800 font-semibold text-lg text-center">
+                  🎯 Paper submission is closed now, see <a href="/call-for-papers/" className="text-blue-600 hover:text-blue-700 underline">Call for Papers</a> for further detail
                 </p>
               </div>
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-md mb-4">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
                 <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
-                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">here register</a> for the AIAgents4Qual 2026 conference . The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a> is also available.
+                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-orange-600 hover:underline">here register</a> for the AIAgents4Qual 2026 conference . The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-orange-600 hover:underline">Program</a> is also available.
                 </p>
               </div>
               <p className="text-gray-700 leading-relaxed">

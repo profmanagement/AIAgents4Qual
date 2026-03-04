@@ -130,10 +130,10 @@ export default function CallForPapersPage() {
                 The summit will be held entirely online. Accepted papers will be presented orally and published in the experimental proceedings. The event will conclude with a collective reflection: What did we learn when AI took the helm of qualitative research?
               </p>
 
-              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-md mb-4">
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-md mb-4">
                 <h4 className="text-lg font-bold text-gray-900 mb-3">Conference Registration</h4>
                 <p className="text-gray-700 leading-relaxed mb-0 font-semibold">
-                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">here register</a> for the AIAgents4Qual 2026 conference . The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a> is also available.
+                  You can <a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-orange-600 hover:underline">here register</a> for the AIAgents4Qual 2026 conference. The <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-orange-600 hover:underline">Program</a> is also available.
                 </p>
               </div>
 
