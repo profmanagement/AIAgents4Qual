@@ -79,7 +79,7 @@ export default function CallForPapersPage() {
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Conference Registration Start:</span>
-                    <span className="text-blue-700 font-bold"><a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">Register here</a></p></span>
+                    <span className="text-blue-700 font-bold"><a href="https://aiagents4qual.vfairs.com/en/registration-form" className="text-blue-600 hover:underline">Register here</a></span>
                   </li>
                   <li className="flex justify-between items-center">
                     <span className="font-semibold">Paper decision released:</span>
