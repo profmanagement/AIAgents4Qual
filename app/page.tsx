@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <div className="card text-center">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Virtual Conference</h3>
-              <p className="text-2xl font-bold text-blue-600">13th March 2026 <br> <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a></br></p>
+              <p className="text-2xl font-bold text-blue-600">13th March 2026 <br /> <a href="https://aiagents4qual.vfairs.com/en/#theme-agenda" className="text-blue-600 hover:underline">Program</a></p>
             </div>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function Home() {
                   className="rounded-full mx-auto mb-4 object-cover"
                   loading="lazy"
                 />
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">Fabio<br></br> Lieder</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">Fabio<br /> Lieder</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
                 <p className="text-sm text-gray-600">Bundeswehr University Munich</p>
               </div>
