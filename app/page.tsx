@@ -167,6 +167,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Susanne Friese</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
@@ -179,6 +180,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Fabio<br></br> Lieder</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
@@ -191,6 +193,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Mascha Liening</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
@@ -203,6 +206,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Monika Gesing</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
@@ -215,6 +219,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Kathrin Zimmermann</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
@@ -227,6 +232,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="rounded-full mx-auto mb-4 object-cover"
+                  loading="lazy"
                 />
                 <h3 className="text-lg font-semibold text-gray-900 mb-1">Maik Arnold</h3>
                 <p className="text-sm text-gray-600 mb-2">Conference Chair</p>
