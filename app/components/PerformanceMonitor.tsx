@@ -4,6 +4,11 @@ import { useEffect } from 'react'
 
 export default function PerformanceMonitor() {
   useEffect(() => {
+    // Only run performance monitoring and service worker in production
+    if (process.env.NODE_ENV !== 'production') {
+      return
+    }
+
     // Register service worker for caching
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
